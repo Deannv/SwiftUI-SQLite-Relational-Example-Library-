@@ -6,6 +6,10 @@
 	objectVersion = 77;
 	objects = {
 
+/* Begin PBXBuildFile section */
+		047175832E497C53001440F5 /* SQLite in Frameworks */ = {isa = PBXBuildFile; productRef = 047175822E497C53001440F5 /* SQLite */; };
+/* End PBXBuildFile section */
+
 /* Begin PBXContainerItemProxy section */
 		0471755A2E49792C001440F5 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
@@ -52,6 +56,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				047175832E497C53001440F5 /* SQLite in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -112,6 +117,7 @@
 			);
 			name = MyLibraryApp;
 			packageProductDependencies = (
+				047175822E497C53001440F5 /* SQLite */,
 			);
 			productName = MyLibraryApp;
 			productReference = 0471754C2E49792C001440F5 /* MyLibraryApp.app */;
@@ -195,6 +201,9 @@
 			);
 			mainGroup = 047175432E49792B001440F5;
 			minimizedProjectReferenceProxies = 1;
+			packageReferences = (
+				047175762E497957001440F5 /* XCRemoteSwiftPackageReference "SQLite.swift" */,
+			);
 			preferredProjectObjectVersion = 77;
 			productRefGroup = 0471754D2E49792C001440F5 /* Products */;
 			projectDirPath = "";
@@ -558,6 +567,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		047175762E497957001440F5 /* XCRemoteSwiftPackageReference "SQLite.swift" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/stephencelis/SQLite.swift.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 0.15.4;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		047175822E497C53001440F5 /* SQLite */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 047175762E497957001440F5 /* XCRemoteSwiftPackageReference "SQLite.swift" */;
+			productName = SQLite;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 047175442E49792C001440F5 /* Project object */;
 }
